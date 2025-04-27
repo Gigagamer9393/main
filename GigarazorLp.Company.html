@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigarazorLP Mod Menü</title>
+    <style>
+        /* Allgemeine Stile für die Seite */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ff5733; /* Farbe bei Hover */
+        }
+
+        /* Modals */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .close-btn {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            float: right;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .hero .btn {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .hero .btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            margin: 10px 0;
+        }
+
+        /* Download Section */
+        .download {
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .download .btn {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .download .btn:hover {
+            background-color: #1976D2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="GigarazorLP Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#" id="featuresLink">Features</a></li>
+                <li><a href="#" id="downloadLink">Download</a></li>
+                <li><a href="#" id="contactLink">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Modal für Home -->
+    <div id="homeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Willkommen zu GigarazorLP!</h2>
+            <p>Hier findest du alle Informationen zu unserem Mod-Menü. Entdecke neue Funktionen, Cheats und vieles mehr!</p>
+        </div>
+    </div>
+
+    <!-- Modal für Features -->
+    <div id="featuresModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Features des Mod Menüs</h2>
+            <ul>
+                <li>Unbegrenzte Ressourcen</li>
+                <li>Verschiedene Cheats und Hacks</li>
+                <li>Benutzerfreundliche Oberfläche</li>
+                <li>Lagfree</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal für Kontakt -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Kontakt</h2>
+            <p>Du kannst uns auf Discord erreichen:</p>
+            <a href="https://discord.gg/zDXaVgCB" target="_blank" class="btn">Tritt unserem Discord bei</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Willkommen zum GigarazorLP Mod Menü</h1>
+        <p>Entdecke neue Funktionen und erlebe das Spiel auf eine ganz neue Art!</p>
+        <!-- Download Now Button führt zur Website -->
+        <a href="https://os5.mycloud.com/action/share/d12ea6ff-a901-4dbf-9d3d-46b31659df1c" target="_blank" class="btn">Download Now</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Unbegrenzte Ressourcen</li>
+            <li>Verschiedene Cheats und Hacks</li>
+            <li>Benutzerfreundliche Oberfläche</li>
+            <li>Lagfree</li>
+        </ul>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download">
+        <h2>Download</h2>
+        <p>Du kannst das Shadow-Black Mod Menü hier herunterladen:</p>
+        <!-- Download-Button für Shadow-Black Mod Menü -->
+        <a href="https://os5.mycloud.com/action/share/a6cc5f87-edab-41f5-a2da-60d7d89cb48e" target="_blank" class="btn">Download Shadow-Black</a>
+        
+        <p>Hier kannst du das Wittschi Mod Menü herunterladen:</p>
+        <!-- Neuer Download-Button für Wittschi Mod Menü -->
+        <a href="https://os5.mycloud.com/action/share/b5c2d95c-4919-4c79-b94f-d3ee3722ac55" target="_blank" class="btn">Download Wittschi Mod Menü</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GigarazorLP. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>
